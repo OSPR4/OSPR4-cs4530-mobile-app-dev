@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Last Name"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMiddleName" />
+
+    <EditText
+        android:id="@+id/editTextMiddleName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter Middle Name"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextFirstName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFirstName" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Enter First Name"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageThumbnail"
+        android:layout_width="110dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+    <Button
+        android:id="@+id/buttonTakeProfilePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="Take Profile Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextLastName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
